@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://localhost/phpmyadmin/server_sql.php -->
+<html lang="pt" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/codemirror.css"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/show-hint.css"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/lint.css"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/phpmyadmin.css.php"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/printview.css" media="print" id="printcss"><title>localhost / 127.0.0.1 | phpMyAdmin 4.8.5</title><script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.min.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery-migrate.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/whitelist.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/sprintf.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/ajax.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/keyhandler.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery-ui.min.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/js.cookie.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.mousewheel.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.event.drag-2.2.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.validate.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery-ui-timepicker-addon.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.ba-hashchange-1.3.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.debounce-1.0.5.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/menu-resizer.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/cross_framing_protection.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/rte.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/tracekit.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/error_report.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/messages.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/config.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/doclinks.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/functions.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/navigation.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/indexes.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/common.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/page_settings.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/shortcuts_handler.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/codemirror.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/sql.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/runmode.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/show-hint.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/sql-hint.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/lint.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/sql-lint.js.download"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/console.js.download"></script>
+<script data-cfasync="false" type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"",opendb_url:"db_structure.php",lang:"pt",server:"1",table:"",db:"",token:"#>DPt5*z2N(,!nD5",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Procurar",pma_text_left_default_tab:"Estrutura",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"4.8.5",auth_type:"config",user:"root"});
+ConsoleEnterExecutes=false
+AJAX.scriptHandler.add("vendor/jquery/jquery.min.js",0).add("vendor/jquery/jquery-migrate.js",0).add("whitelist.php",1).add("vendor/sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("vendor/jquery/jquery-ui.min.js",0).add("vendor/js.cookie.js",1).add("vendor/jquery/jquery.mousewheel.js",0).add("vendor/jquery/jquery.event.drag-2.2.js",0).add("vendor/jquery/jquery.validate.js",0).add("vendor/jquery/jquery-ui-timepicker-addon.js",0).add("vendor/jquery/jquery.ba-hashchange-1.3.js",0).add("vendor/jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("vendor/tracekit.js",1).add("error_report.js",1).add("messages.php",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("shortcuts_handler.js",1).add("vendor/codemirror/lib/codemirror.js",0).add("vendor/codemirror/mode/sql/sql.js",0).add("vendor/codemirror/addon/runmode/runmode.js",0).add("vendor/codemirror/addon/hint/show-hint.js",0).add("vendor/codemirror/addon/hint/sql-hint.js",0).add("vendor/codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
+$(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("vendor/js.cookie.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("vendor/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("shortcuts_handler.js");AJAX.fireOnload("console.js");});
+// ]]></script><noscript><style>html{display:block}</style></noscript><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/makegrid.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/jquery.uitablefilter.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/sql.js(1).download"></script></head><body style="margin-left: 240px; margin-bottom: 17.6094px; padding-top: 57.5625px;"><div id="pma_navigation" style="width: 240px;"><div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div><div id="pma_navigation_collapser" title="Esconder painel" style="left: 240px;">←</div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="http://localhost/phpmyadmin/navigation.php?ajax_request=1"></a>    <div id="pmalogo">
+                    <a href="http://localhost/phpmyadmin/index.php">
+                <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/logo_left.png" alt="phpMyAdmin" id="imgpmalogo">
+                    </a>
+            </div>
+<!-- LINKS START --><div id="navipanellinks"><a href="http://localhost/phpmyadmin/index.php" title="Início"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Início" alt="Início" class="icon ic_b_home"></a><a href="http://localhost/phpmyadmin/logout.php" class="logout disableAjax" title="Empty session data"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Empty session data" alt="Empty session data" class="icon ic_s_loggoff"></a><a href="http://localhost/phpmyadmin/doc/html/index.html" target="documentation" title="Documentação do phpMyAdmin"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação do phpMyAdmin" alt="Documentação do phpMyAdmin" class="icon ic_b_docs"></a><a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Findex.html" target="mysql_doc" title="Documentação"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_sqlhelp"></a><a href="http://localhost/phpmyadmin/server_sql.php#" id="pma_navigation_settings_icon" title="Navigation panel settings"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Navigation panel settings" alt="Navigation panel settings" class="icon ic_s_cog"></a><a href="http://localhost/phpmyadmin/server_sql.php#" id="pma_navigation_reload" title="Reload navigation panel"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload"></a></div><!-- LINKS ENDS --><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Carregando…" alt="Carregando…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber"></div><div id="pma_navigation_tree" class="list_container synced highlight" style="height: 505.391px;"><div class="pma_quick_warp"><div class="drop_list"><span title="Tabelas recentes" class="drop_button">Recente</span><ul id="pma_recent_list"><li class="warp_link">Não existem tabelas recentes.</li></ul></div><div class="drop_list"><span title="Tabelas Favoritas" class="drop_button">Favoritos</span><ul id="pma_favorite_list"><li class="warp_link">Não existem tabelas favoritas.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer" class=""><div id="navigation_controls"><a href="http://localhost/phpmyadmin/server_sql.php#" id="pma_navigation_collapse" title="Collapse all"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Collapse all" alt="Collapse all" class="icon ic_s_collapseall"></a><a href="http://localhost/phpmyadmin/server_sql.php#" id="pma_navigation_sync" title="Desconectar do painel principal"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Desconectar do painel principal" alt="Desconectar do painel principal" class="icon ic_s_link"></a></div></li><!-- CONTROLS ENDS --></ul><div id="pma_navigation_tree_content" style="height: 460.375px;"><ul><li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block "><a href="http://localhost/phpmyadmin/server_databases.php?server=1"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/server_databases.php?server=1" title="">New</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/server_sql.php#"><span class="hide aPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide vPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=information_schema&amp;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=information_schema" title="Estrutura">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/server_sql.php#"><span class="hide aPath">cm9vdA==.bXlzcWw=</span><span class="hide vPath">cm9vdA==.bXlzcWw=</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=mysql&amp;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=mysql" title="Estrutura">mysql</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/server_sql.php#"><span class="hide aPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide vPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=performance_schema&amp;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=performance_schema" title="Estrutura">performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/server_sql.php#"><span class="hide aPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide vPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=phpmyadmin&amp;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=phpmyadmin" title="Estrutura">phpmyadmin</a><div class="clearfloat"></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="http://localhost/phpmyadmin/server_sql.php#"><span class="hide aPath">cm9vdA==.dGVzdA==</span><span class="hide vPath">cm9vdA==.dGVzdA==</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=test&amp;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=test" title="Estrutura">test</a><div class="clearfloat"></div></li></ul></div></div><div id="pma_navi_settings_container"><div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/server_sql.php?db=&amp;table=&amp;server=1&amp;target=" class="config-form disableAjax"><input type="hidden" name="tab_hash" value=""><input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1">
+<input type="hidden" name="token" value="#&gt;DPt5*z2N(,!nD5">
+<input type="hidden" name="submit_save" value="Navi"><input type="hidden" name="token" value="#&gt;DPt5*z2N(,!nD5"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Navi_panel">
+            Painel de navegação
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Navi_tree">
+            Navigation tree
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Navi_servers">
+            Servidores
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Navi_databases">
+            Base de Dados
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Navi_tables">
+            Tabelas
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="Navi_panel" style="">
+<legend>Painel de navegação</legend>
+    <p>Personalizar a aparência do painel de navegação.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowDatabasesNavigationAsTree">Mostra navegação de bases de dados como árvore</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>No painel de navegação, substitui a árvore da base de dados por um seletor</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#ShowDatabasesNavigationAsTree" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLinkWithMainPanel">Conectar com o painel principal</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Liga com o painel principal destacando a base de dados ou tabela actual.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationLinkWithMainPanel" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationDisplayLogo">Mostrar logotipo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Mostrar o logótipo no painel de navegação.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationDisplayLogo" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLink">URL do link do logotipo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>URL para onde irá apontar o logótipo do painel de navegação.</small></th><td><input type="text" class="all85" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationLogoLink" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLinkWindow">Destino da ligação do logótipo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Abre a página ligada na janela principal (<kbd>principal</kbd>) ou numa nova janela (<kbd>nova</kbd>).</small></th><td><select class="all85" name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow"><option value="main" selected="selected">main</option><option value="new">new</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationLogoLinkWindow" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreePointerEnable">Ativar destaque</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Destaque servidor sob o cursor do rato.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreePointerEnable" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="FirstLevelNavigationItems">Máximo de itens no primeiro nível</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>O número de itens que podem ser mostrados em cada página no primeiro nível da árvore de navegação.</small></th><td><input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#FirstLevelNavigationItems" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDisplayItemFilterMinimum">Número mínimo de itens a apresentar na caixa de filtragem</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Define o número mínimo de itens (tabelas, vistas, rotinas e eventos) a apresentar numa caixa de filtragem.</small></th><td><input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeDisplayItemFilterMinimum" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumRecentTables">Tabelas utilizadas recentemente</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Número máximo de tabelas utilizadas recentemente, definir 0 para desativar.</small></th><td><input type="number" name="NumRecentTables" id="NumRecentTables" value="10"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NumRecentTables" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumFavoriteTables">Tabelas Favoritas</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Número máximo de tabelas favoritas, definir 0 para desativar.</small></th><td><input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NumFavoriteTables" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationWidth">Navigation panel width</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Set to 0 to collapse navigation panel.</small></th><td><input type="number" name="NavigationWidth" id="NavigationWidth" value="240"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationWidth" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tree" style="display: none;">
+<legend>Navigation tree</legend>
+    <p>Customize the navigation tree.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="MaxNavigationItems">Máximo de itens por ramo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>O número de itens que podem ser mostradas em cada página da árvore de navegação.</small></th><td><input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#MaxNavigationItems" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableGrouping">Agrupar itens na árvore</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Group items in the navigation tree (determined by the separator defined in the Databases and Tables tabs above).</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeEnableGrouping" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableExpansion">Enable navigation tree expansion</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Whether to offer the possibility of tree expansion in the navigation panel.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeEnableExpansion" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowTables">Show tables in tree</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Whether to show tables under database in the navigation tree</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeShowTables" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowViews">Show views in tree</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Whether to show views under database in the navigation tree</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeShowViews" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowFunctions">Show functions in tree</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Se para mostrar funções abaixo da base de dados na árvore de navegação</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeShowFunctions" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowProcedures">Show procedures in tree</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Se para mostrar procedimentos abaixo da base de dados na árvore de navegação</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeShowProcedures" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowEvents">Show events in tree</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Whether to show events under database in the navigation tree</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeShowEvents" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_servers" style="display: none;">
+<legend>Servidores</legend>
+    <p>Exibir as opções dos servidores.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationDisplayServers">Mostrar seleção de servidores</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Apresentar o servidor escolhido no topo do painel de navegação.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationDisplayServers" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="DisplayServersList">Mostrar servidores como uma lista</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Mostrar lista de servidores como uma lista ao invés de um menu drop down.</small></th><td><span class="checkbox"><input type="checkbox" name="DisplayServersList" id="DisplayServersList"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#DisplayServersList" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_databases" style="display: none;">
+<legend>Base de Dados</legend>
+    <p>Opções de visualização das Bases de dados.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDisplayDbFilterMinimum">Número mínimo de bases de dados para mostrar a caixa de filtragem de base de dados</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeDisplayDbFilterMinimum" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDbSeparator">Divisor de árvore da base de dados</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Cadeia de caracteres que separa bases de dados em diferentes níveis de árvore.</small></th><td><input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeDbSeparator" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tables" style="display: none;">
+<legend>Tabelas</legend>
+    <p>Opções de exibição de tabelas.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDefaultTabTable">Alvo para ícone de acesso rápido</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable"><option value="structure" selected="selected">Estrutura</option><option value="sql">SQL</option><option value="search">Pesquisar</option><option value="insert">Insere</option><option value="browse">Procurar</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeDefaultTabTable" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDefaultTabTable2">Target for second quick access icon</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2"><option value="" selected="selected"></option><option value="structure">Estrutura</option><option value="sql">SQL</option><option value="search">Pesquisar</option><option value="insert">Insere</option><option value="browse">Procurar</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeDefaultTabTable2" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableSeparator">Separador de árvore da tabela</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Cadeia de caracteres que separa tabelas em níveis diferentes de árvores.</small></th><td><input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeTableSeparator" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableLevel">Profundidade máxima da árvore da tabela</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#NavigationTreeTableLevel" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+validateField('FirstLevelNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NumRecentTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NumFavoriteTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NavigationWidth', 'PMA_validateNonNegativeNumber', true);
+validateField('MaxNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NavigationTreeTableLevel', 'PMA_validatePositiveNumber', true);
+$.extend(PMA_messages, {
+	'error_nan_p': 'Número não positivo!',
+	'error_nan_nneg': 'Não é um número não-negativo!',
+	'error_incorrect_port': 'Número de porta inválido!',
+	'error_invalid_value': 'Valor incorrecto!',
+	'error_value_lte': 'O valor precisa ser igual ou menor que %s!'});
+$.extend(defaultValues, {
+	'ShowDatabasesNavigationAsTree': true,
+	'NavigationLinkWithMainPanel': true,
+	'NavigationDisplayLogo': true,
+	'NavigationLogoLink': 'index.php',
+	'NavigationLogoLinkWindow': ['main'],
+	'NavigationTreePointerEnable': true,
+	'FirstLevelNavigationItems': '100',
+	'NavigationTreeDisplayItemFilterMinimum': '30',
+	'NumRecentTables': '10',
+	'NumFavoriteTables': '10',
+	'NavigationWidth': '240',
+	'MaxNavigationItems': '50',
+	'NavigationTreeEnableGrouping': true,
+	'NavigationTreeEnableExpansion': true,
+	'NavigationTreeShowTables': true,
+	'NavigationTreeShowViews': true,
+	'NavigationTreeShowFunctions': true,
+	'NavigationTreeShowProcedures': true,
+	'NavigationTreeShowEvents': true,
+	'NavigationDisplayServers': true,
+	'DisplayServersList': false,
+	'NavigationTreeDisplayDbFilterMinimum': '30',
+	'NavigationTreeDbSeparator': '_',
+	'NavigationTreeDefaultTabTable': ['structure'],
+	'NavigationTreeDefaultTabTable2': [''],
+	'NavigationTreeTableSeparator': '__',
+	'NavigationTreeTableLevel': '1'});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div></div></div><div class="pma_drop_handler">Largue ficheiros aqui</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;"><div id="serverinfo"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_host item"><a href="http://localhost/phpmyadmin/index.php" class="item">Servidor: 127.0.0.1</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><i class="scrollindicator scrollindicator--left"><img alt="" title="" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" class="icon ic_b_left"></i><div class="navigationbar" style="width: auto; overflow: visible;"><ul id="topmenu" class="resizable-menu"><li>
+
+            <a href="http://localhost/phpmyadmin/server_databases.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Base de Dados" alt="Base de Dados" class="icon ic_s_db">&nbsp;Base de Dados
+            </a>
+        </li>
+<li class="active">
+
+            <a href="http://localhost/phpmyadmin/server_sql.php" class="tabactive">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_status.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Estado" alt="Estado" class="icon ic_s_status">&nbsp;Estado
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_privileges.php?viewing_mode=server" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Contas de usuário" alt="Contas de usuário" class="icon ic_s_rights">&nbsp;Contas de usuário
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_export.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Exportar" alt="Exportar" class="icon ic_b_export">&nbsp;Exportar
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_import.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Importar" alt="Importar" class="icon ic_b_import">&nbsp;Importar
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/prefs_manage.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Configurações" alt="Configurações" class="icon ic_b_tblops">&nbsp;Configurações
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_replication.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Replicação" alt="Replicação" class="icon ic_s_replication">&nbsp;Replicação
+            </a>
+        </li>
+
+
+
+
+<li class="submenu shown" style=""><a href="http://localhost/phpmyadmin/server_sql.php#" class="tab nowrap"><img alt="" title="" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" class="icon ic_b_more">Mais</a><ul class="notonly"><li>
+
+            <a href="http://localhost/phpmyadmin/server_variables.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Variáveis" alt="Variáveis" class="icon ic_s_vars">&nbsp;Variáveis
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/server_collations.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Mapas de Caracteres" alt="Mapas de Caracteres" class="icon ic_s_asci">&nbsp;Mapas de Caracteres
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/server_engines.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Motores" alt="Motores" class="icon ic_b_engine">&nbsp;Motores
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/server_plugins.php" class="tab">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Plugins" alt="Plugins" class="icon ic_b_plugin">&nbsp;Plugins
+            </a>
+        </li></ul></li><div class="clearfloat"></div></ul></div>
+<i class="scrollindicator scrollindicator--right"><img alt="" title="" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" class="icon ic_b_right"></i></div>
+</div>
+<span id="page_nav_icons"><span id="lock_page_icon"><img alt="Indica que foram feitas mudanças nesta página; Será pedida confirmação antes de abandonar as mudanças" title="Indica que foram feitas mudanças nesta página; Será pedida confirmação antes de abandonar as mudanças" src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" class="icon ic_s_lock"></span><span id="page_settings_icon" style="display: inline;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Configurações relacionadas com a página" alt="Configurações relacionadas com a página" class="icon ic_s_cog"></span><a id="goto_pagetop" href="http://localhost/phpmyadmin/server_sql.php#"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Clique na barra para deslizar para o topo da página" alt="Clique na barra para deslizar para o topo da página" class="icon ic_s_top"></a></span><div id="pma_console_container">
+    <div id="pma_console" style="margin-left: 243px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Consola de Consulta SQL" alt="Consola de Consulta SQL" class="icon ic_console">
+            <span>Consola</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>Limpar</span>
+        </div>
+                            <div class="button history">
+            
+            <span>Histórico</span>
+        </div>
+                            <div class="button options">
+            
+            <span>Opções</span>
+        </div>
+                            <div class="button bookmarks">
+            
+            <span>Marcadores</span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>Depurar SQL</span>
+        </div>
+            </div>
+                <div class="content" style="height: 92px; margin-bottom: -98.248px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        Use Ctrl+Enter para executar a consulta                    </span>
+                    <span class="hide" id="instructions-1">
+                        Press Enter to execute query                    </span>
+                </div>
+                            </div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -17px; border-right-width: 13px; min-height: 15px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 15px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 15px;"></div><div class="CodeMirror-gutters" style="height: 28px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>ascending</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>descending</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>Depurar SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>Contagem</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>Execution order</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>Time taken</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order by:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>Group queries</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>Ungroup queries</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 92px;">
+                <div class="message welcome binded">Algum erro ocorreu ao carregar a informação de debug do SQL.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            Ocultar
+                    </span>
+                            <span class="action expand">
+            Mostrar
+                    </span>
+                            <span class="action dbg_show_trace">
+            Show trace
+                    </span>
+                            <span class="action dbg_hide_trace">
+            Hide trace
+                    </span>
+                            <span class="text count hide">
+            Contagem
+                    </span>
+                            <span class="text time">
+            Time taken
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                    <div class="card" id="pma_bookmarks">
+                <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Marcadores</span>
+        </div>
+                            <div class="button refresh">
+            
+            <span>Actualizar</span>
+        </div>
+                            <div class="button add">
+            
+            <span>Adicionar</span>
+        </div>
+            </div>
+                <div class="content bookmark" style="height: 92px;">
+                    <div class="message welcome binded">
+    <span>Sem marcadores</span>
+</div>
+
+                </div>
+                <div class="mid_layer"></div>
+                <div class="card add">
+                    <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Adicionar marcador</span>
+        </div>
+            </div>
+                    <div class="content add_bookmark" style="height: 92px;">
+                        <div class="options">
+                            <label>
+                                Label: <input type="text" name="label">
+                            </label>
+                            <label>
+                                Base de dados destino: <input type="text" name="targetdb">
+                            </label>
+                            <label>
+                                <input type="checkbox" name="shared">Partilhar marcador                            </label>
+                            <button type="submit" name="submit">OK</button>
+                        </div> <!-- options -->
+                        <div class="query_input">
+                            <span class="bookmark_add_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -17px; border-right-width: 13px; min-height: 15px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 15px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 15px;"></div><div class="CodeMirror-gutters" style="height: 28px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+                        </div>
+                    </div>
+                </div> <!-- Add bookmark card -->
+            </div> <!-- Bookmarks card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Opções</span>
+        </div>
+                            <div class="button default">
+            
+            <span>Definir como padrão</span>
+        </div>
+            </div>
+            <div class="content" style="height: 92px;">
+                <label>
+                    <input type="checkbox" name="always_expand">Expandir sempre mensagens da consulta                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history">Mostrar histórico da consulta no início                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query">Show current browsing query                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes">
+                        Execute queries on Enter and insert new line with Shift + Enter. To make this permanent, view settings.                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme">Switch to dark theme                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            Ocultar
+                    </span>
+                            <span class="action expand">
+            Mostrar
+                    </span>
+                            <span class="action requery">
+            Re-consultar
+                    </span>
+                            <span class="action edit">
+            Edita
+                    </span>
+                            <span class="action explain">
+            Explicar
+                    </span>
+                            <span class="action profiling">
+            Perfil
+                    </span>
+                            <span class="action bookmark">
+            Marcadores
+                    </span>
+                            <span class="text failed">
+            Consulta falhou
+                    </span>
+                            <span class="text targetdb">
+            Base de Dados
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+<div id="page_content"><div id="loading_parent"></div><div id="page_settings_modal"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/server_sql.php?db=&amp;table=&amp;server=1&amp;target=" class="config-form disableAjax"><input type="hidden" name="tab_hash" value=""><input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
+<input type="hidden" name="token" value="#&gt;DPt5*z2N(,!nD5">
+<input type="hidden" name="submit_save" value="Sql"><input type="hidden" name="token" value="#&gt;DPt5*z2N(,!nD5"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Sql_queries">
+            Consultas SQL
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/server_sql.php#Sql_box">
+            SQL caixa de Consulta
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="Sql_queries" style="">
+<legend>Consultas SQL</legend>
+    <p>Definições de consultas SQL.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowSQL">Mostrar consultas SQL</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowSQL" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Define se as consultas SQL geradas pelo phpMyAdmin devem ser exibidas.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowSQL" id="ShowSQL" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#ShowSQL" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="Confirm">Confirma consultas DROP</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_Confirm" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Exibir aviso ("Tem mesmo a certeza…") quando estiver prestes a perder dados.</small></th><td><span class="checkbox"><input type="checkbox" name="Confirm" id="Confirm" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#Confirm" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="QueryHistoryMax">Tamanho do histórico de consultas</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_QueryHistoryMax" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Quantas consultas são mantidas no histórico.</small></th><td><input type="number" name="QueryHistoryMax" id="QueryHistoryMax" value="25"><span class="field-comment-mark" title="máximo 25">i</span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#QueryHistoryMax" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="IgnoreMultiSubmitErrors">Ignora erro de declarações múltiplas</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_IgnoreMultiSubmitErrors" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Se ativado, phpMyAdmin continua a processar consultas com múltiplas instruções mesmo se uma das consultas falhar.</small></th><td><span class="checkbox"><input type="checkbox" name="IgnoreMultiSubmitErrors" id="IgnoreMultiSubmitErrors"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#IgnoreMultiSubmitErrors" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="MaxCharactersInDisplayedSQL">Largura máxima do SQL exibido</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxCharactersInDisplayedSQL" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Número máximo de caracteres usados quando uma consulta SQL é mostrada.</small></th><td><input type="number" name="MaxCharactersInDisplayedSQL" id="MaxCharactersInDisplayedSQL" value="1000"><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#MaxCharactersInDisplayedSQL" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="RetainQueryBox">Reter a caixa da consulta (query)</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_RetainQueryBox" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Define se a caixa de consultas deve permanecer aberta depois da sua submissão.</small></th><td><span class="checkbox"><input type="checkbox" name="RetainQueryBox" id="RetainQueryBox"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#RetainQueryBox" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="CodemirrorEnable">Activar CodeMirror</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_CodemirrorEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Use o nosso editor amigável para editar consultas SQL (CodeMirror) com realce de sintaxe e número de linhas.</small></th><td><span class="checkbox"><input type="checkbox" name="CodemirrorEnable" id="CodemirrorEnable" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#CodemirrorEnable" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="LintEnable">Activar Validador de SQL</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_LintEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Encontra quaisquer erros na consulta antes da sua execução. Requer que CodeMirror seja ativado.</small></th><td><span class="checkbox"><input type="checkbox" name="LintEnable" id="LintEnable" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#LintEnable" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="EnableAutocompleteForTablesAndColumns">Enable autocomplete for table and column names</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_EnableAutocompleteForTablesAndColumns" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Autocomplete of the table and column names in the SQL queries.</small></th><td><span class="checkbox"><input type="checkbox" name="EnableAutocompleteForTablesAndColumns" id="EnableAutocompleteForTablesAndColumns" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#EnableAutocompleteForTablesAndColumns" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="DefaultForeignKeyChecks">Foreign key checks</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DefaultForeignKeyChecks" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span><small>Default value for foreign key checks checkbox for some queries.</small></th><td><select class="all85" name="DefaultForeignKeyChecks" id="DefaultForeignKeyChecks"><option value="default" selected="selected">Servidor padrão</option><option value="enable">Ativado</option><option value="disable">Desativado</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#DefaultForeignKeyChecks" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Sql_box" style="display: none;">
+<legend>SQL caixa de Consulta</legend>
+    <p>Personaliza links mostrados nas caixas de consulta SQL.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="SQLQuery-Edit">Edita</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Edit" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><span class="checkbox"><input type="checkbox" name="SQLQuery-Edit" id="SQLQuery-Edit" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#SQLQuery-Edit" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="SQLQuery-Explain">Explicar SQL</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Explain" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><span class="checkbox"><input type="checkbox" name="SQLQuery-Explain" id="SQLQuery-Explain" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#SQLQuery-Explain" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="SQLQuery-ShowAsPHP">Criar código PHP</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_ShowAsPHP" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><span class="checkbox"><input type="checkbox" name="SQLQuery-ShowAsPHP" id="SQLQuery-ShowAsPHP" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#SQLQuery-ShowAsPHP" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="SQLQuery-Refresh">Actualizar</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Refresh" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a>
+</span></th><td><span class="checkbox"><input type="checkbox" name="SQLQuery-Refresh" id="SQLQuery-Refresh" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/server_sql.php#SQLQuery-Refresh" title="Restaurar valor padrão" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+validateField('QueryHistoryMax', 'PMA_validatePositiveNumber', true);
+validateField('QueryHistoryMax', 'PMA_validateUpperBound', true, ['25']);
+validateField('MaxCharactersInDisplayedSQL', 'PMA_validatePositiveNumber', true);
+$.extend(PMA_messages, {
+	'error_nan_p': 'Número não positivo!',
+	'error_nan_nneg': 'Não é um número não-negativo!',
+	'error_incorrect_port': 'Número de porta inválido!',
+	'error_invalid_value': 'Valor incorrecto!',
+	'error_value_lte': 'O valor precisa ser igual ou menor que %s!'});
+$.extend(defaultValues, {
+	'ShowSQL': true,
+	'Confirm': true,
+	'QueryHistoryMax': '25',
+	'IgnoreMultiSubmitErrors': false,
+	'MaxCharactersInDisplayedSQL': '1000',
+	'RetainQueryBox': false,
+	'CodemirrorEnable': true,
+	'LintEnable': true,
+	'EnableAutocompleteForTablesAndColumns': true,
+	'DefaultForeignKeyChecks': ['default'],
+	'SQLQuery-Edit': true,
+	'SQLQuery-Explain': true,
+	'SQLQuery-ShowAsPHP': true,
+	'SQLQuery-Refresh': true});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div><form method="post" action="http://localhost/phpmyadmin/import.php" enctype="multipart/form-data" class="ajax lock-page" id="sqlqueryform" name="sqlform">
+<input type="hidden" name="is_js_confirmed" value="0">
+<input type="hidden" name="token" value="#&gt;DPt5*z2N(,!nD5">
+<input type="hidden" name="pos" value="0">
+<input type="hidden" name="goto" value="server_sql.php">
+<input type="hidden" name="message_to_show" value="A sua consulta SQL foi executada com êxito.">
+<input type="hidden" name="prev_sql_query" value="">
+<a id="querybox"></a><div id="queryboxcontainer"><fieldset id="queryboxf"><legend>Run SQL query/queries on server “127.0.0.1”: <a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Fselect.html" target="mysql_doc"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a></legend><div id="queryfieldscontainer"><div id="sqlquerycontainerfull"><textarea tabindex="100" name="sql_query" id="sqlquery" cols="40" rows="30" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap ui-resizable CodeMirror-focused" style="resize: vertical;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 50px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="100"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 46px; margin-bottom: -17px; border-right-width: 13px; min-height: 151px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 954px; height: 13px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 130px; width: 11.7188px; height: 13px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 13px; width: 954px; height: 117px;"></div></div><div class="CodeMirror-cursors" style="visibility: hidden;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">CREATE</span> <span class="cm-keyword">DATABASE</span> projeto_pulseADS;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">USE</span> projeto_pulseADS;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">CREATE</span> <span class="cm-keyword">TABLE</span> usuarios(</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">id_usuarios <span class="cm-builtin">int</span> <span class="cm-keyword">AUTO_INCREMENT</span> <span class="cm-keyword">PRIMARY</span> <span class="cm-keyword">KEY</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">nome <span class="cm-builtin">varchar</span>(<span class="cm-number">30</span>),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">telefone <span class="cm-builtin">varchar</span>(<span class="cm-number">30</span>),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">email <span class="cm-builtin">varchar</span>(<span class="cm-number">40</span>),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">senha <span class="cm-builtin">varchar</span>(<span class="cm-number">32</span>),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 0px; width: 16px;"><div class="CodeMirror-lint-marker-error"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class=" CodeMirror-lint-mark-error">)</span>;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 151px;"></div><div class="CodeMirror-gutters" style="height: 164px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div></div><div id="querymessage"></div><input type="button" value="Limpar" id="clear" class="button sqlbutton"><input type="button" value="Formato" id="format" class="button sqlbutton"><input type="button" value="Get auto-saved query" id="saved" class="button sqlbutton"><div><input type="checkbox" name="parameterized" id="parameterized"><label for="parameterized">Bind parameters</label><a href="http://localhost/phpmyadmin/doc/html/faq.html#faq6-40" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Documentação" alt="Documentação" class="icon ic_b_help"></a><div id="parametersDiv"></div></div></div>
+<div class="clearfloat"></div>
+</div>
+<div id="bookmarkoptions"><div class="formelement"><label for="bkm_label">Bookmark this SQL query:</label><input type="text" name="bkm_label" id="bkm_label" tabindex="110" value=""></div><div class="formelement" style="display: none;"><input type="checkbox" name="bkm_all_users" tabindex="111" id="id_bkm_all_users" value="true"><label for="id_bkm_all_users">Deixar todos os utilizadores acederem a este marcador</label></div><div class="formelement" style="display: none;"><input type="checkbox" name="bkm_replace" tabindex="112" id="id_bkm_replace" value="true"><label for="id_bkm_replace">Replace existing bookmark of same name</label></div></div><div class="clearfloat"></div>
+</fieldset>
+</div>
+<fieldset id="queryboxfooter" class="tblFooters">
+<div class="formelement">
+</div>
+<div class="formelement"><label for="id_sql_delimiter">[ Delimiter</label>
+<input type="text" name="sql_delimiter" tabindex="131" size="3" value=";" id="id_sql_delimiter"> ]</div><div class="formelement"><input type="checkbox" name="show_query" value="1" id="checkbox_show_query" tabindex="132" checked="checked"><label for="checkbox_show_query">Mostrar de novo aqui este comando</label></div><div class="formelement"><input type="checkbox" name="retain_query_box" value="1" id="retain_query_box" tabindex="133"><label for="retain_query_box">Reter a caixa da consulta (query)</label></div><div class="formelement"><input type="checkbox" name="rollback_query" value="1" id="rollback_query" tabindex="134"><label for="rollback_query">Rollback when finished</label></div><div class="formelement"><input type="hidden" name="fk_checks" value="0">
+<input type="checkbox" name="fk_checks" id="fk_checks" value="1" checked="">
+<label for="fk_checks">Ativa a verificação de chaves estrangeiras</label>
+</div><input type="submit" id="button_submit_query" name="SQL" tabindex="200" value="Executar">
+<div class="clearfloat"></div>
+</fieldset>
+<a id="togglequerybox" style="display: none;">Esconder Caixa do query</a></form>
+<div id="sqlqueryresultsouter"></div></div><div id="selflink" class="print_ignore"><a href="http://localhost/phpmyadmin/server_sql.php?db=&amp;table=&amp;server=1&amp;target=" title="Abrir nova janela do phpMyAdmin" target="_blank" rel="noopener noreferrer"><img src="./localhost _ 127.0.0.1 _ phpMyAdmin 4.8.5_files/dot.gif" title="Abrir nova janela do phpMyAdmin" alt="Abrir nova janela do phpMyAdmin" class="icon ic_window-new"></a></div></body></html>
